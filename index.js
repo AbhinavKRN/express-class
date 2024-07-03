@@ -27,7 +27,7 @@ function writeCourses(courses) {
     }
 }
 
-app.get('/courses', (req, res) => {
+app.get('/courses ', (req, res) => {
     const courses = readCourses();
     res.json(courses);
 });
